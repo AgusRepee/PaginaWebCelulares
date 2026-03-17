@@ -1,81 +1,80 @@
 import type { Product } from '@/types';
 
-// Centralized mock catalog.
-// Later, you can replace this with API data without touching your pages/components.
+// Catálogo Apple — solo productos oficiales Apple.
 export const products: Product[] = [
   {
     id: '1',
-    title: 'Mobix X1 Pro',
-    subtitle: '512GB - Midnight',
-    price: 999.0,
+    title: 'iPhone 16 Pro',
+    subtitle: '256 GB - Titanio natural',
+    price: 1199.0,
     image:
-      'https://lh3.googleusercontent.com/aida-public/AB6AXuDcivS0yJoAhLWkeewY27KAZqi33CrsUysXesEvA0uUk2mcq9mTnKrQvsgMQ6kScmXKeaucUNlR4tsLoJyITYf48woF-nhexzy454peGoyvbTBSA_PRPcWhZDgQ1xeUeSbrgb14LoRSb0RqHEwkFc74PZOEsepTVMSaIFrnrHIIBK9AKDEGTH_S7i_J5BPhewoRalkQcSfeKBpensVHnYMZ-7p7yvrqvw3uHG_h2n6rv8YeCPmZPHI4zWSl91bxJzRCBwcQaSsBwLM',
-    category: 'phones',
+      'https://images.unsplash.com/photo-1695048133142-1a20484d2569?auto=format&fit=crop&w=1200&q=80',
+    category: 'iphone',
   },
   {
     id: '2',
-    title: 'Ultra Watch Series 5',
-    subtitle: 'Titanium Case',
-    price: 499.0,
+    title: 'Apple Watch Ultra 2',
+    subtitle: 'Caja de titanio - 49 mm',
+    price: 799.0,
     image:
-      'https://lh3.googleusercontent.com/aida-public/AB6AXuCyg1cg6n6PFVUt9jZvAPRmSyl7rvTSk3PeGzOsjXkc_eI7BmDZaN_7s1-13CvnYztCKVYgXfGJird6J9em1YwDJMWJ2XfMgMK9CX4HwE8_YjJ9RxLdZEZ58jgTajg3GQi2SWTTmwCZ40WlOcB1eSboh_iBK5raVSdLYEBkogkUt38dN1MjL8mkI_Ywa5U7n1QTfdKuSyf6qljpO4YFqGZeCeff6lcrAOPYNyzquidYD8zw_jN2NfsLfrKMFL6Ie-3B_Wpf8wajvXQ',
+      'https://images.unsplash.com/photo-1434493789847-2f02dc6ca35d?auto=format&fit=crop&w=1200&q=80',
     badge: { text: 'Nuevo', color: 'red' },
-    category: 'wearables',
+    category: 'watch',
   },
   {
     id: '3',
-    title: 'Sonic Over-Ear',
-    subtitle: 'Noise Cancelling',
-    price: 349.0,
+    title: 'AirPods Pro (2.ª generación)',
+    subtitle: 'Cancelación de ruido activa',
+    price: 249.0,
     image:
-      'https://lh3.googleusercontent.com/aida-public/AB6AXuBSG4Jbz-mzAt1AMHiz6byJycPhTzSWQIIvIyRRfwh9HdUzN6gfnaeaU7XcgJpAuD8sgY7wSZjAmSXI5lu3VGxSVGtt1ud5Fs4VmPyMinUitLi7NtCYG90Qw5zMr3dap1gAmunXu8ItNJ6GSPC-XcYcJ-DZK9aaqWTB1zNyF348WyIqO3x1fm6rZxulZ62B9Yn-a1EfupdUQyeQNzlfmythkNTuEglYbm2IIvFv9ZcmpM9hZ8HRAKjGNNe5wrfmrFc20Aunx4RpLHI',
-    category: 'audio',
+      'https://images.unsplash.com/photo-1606220588913-b3aacb4d2f46?auto=format&fit=crop&w=1200&q=80',
+    category: 'airpods',
   },
   {
     id: '4',
-    title: 'Tab Air 10.9"',
-    subtitle: 'Wi‑Fi + Cellular',
-    price: 699.0,
+    title: 'iPad Air 11"',
+    subtitle: 'Wi‑Fi + Cellular - 128 GB',
+    price: 799.0,
     image:
-      'https://lh3.googleusercontent.com/aida-public/AB6AXuCOjbdKCJbGRBxeE2bWOYBMkgPgJZrEfcy_1cuG5YOvwwxv9EtdhsWVN9MZNlACMmMSgjBoGC-1FUwYVsWUoy3BKqS0nupEzA_0oAl5dnyUomqkdtoBkcm-a3fKY5xMXtkMgGF1VmtC9tS9u9fOU-ZT88hC2HjsQ5g0fTPU7nlRmiScVMwZf6yxL5xxzPoZ5BEADO7QPWlzPcV469dv5tqWeAEz6uP0paN7CQkEEfHbTIvCq4eiKU8u4O-FPgpQUwZJSSKVgaT8mlk',
-    category: 'tablets',
+      'https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?auto=format&fit=crop&w=1200&q=80',
+    category: 'ipad',
   },
   {
     id: '5',
-    title: 'Pro Buds 2',
-    subtitle: 'True Wireless',
-    price: 199.0,
+    title: 'AirPods Max',
+    subtitle: 'Over-ear - Cinco colores',
+    price: 549.0,
     image:
-      'https://lh3.googleusercontent.com/aida-public/AB6AXuCwM9vJYVpCRVeGPJ_wSwL2R6AbODuJKZmEb7Mb_xIF9G8ni0hYx6c_ZXb6O5sG4up6TEuTnIzA5zzypQiKGCggIgmmcx8tWYzHB1n7Zwfaq3fkE-pa4JiAe6TQYyCwm7O4K0DHmlhyivHAOh_9YBIW8onROqme3AG5gBKhCzRJSWGiR3vgeRCeH18qWwFcFiIN15r5DsRN_m_gY9o9chYZcgEa7Rp3ws_1RskkxcjGoVilUFZ-85itH13zZid1CJ0_v15gX4AyssM',
-    category: 'audio',
+      'https://images.unsplash.com/photo-1625299401802-2d0622d2e2c2?auto=format&fit=crop&w=1200&q=80',
+    category: 'airpods',
   },
   {
     id: '6',
-    title: 'G‑Controller',
-    subtitle: 'Dual Shock',
-    price: 59.0,
-    originalPrice: 79.0,
+    title: 'Cargador MagSafe',
+    subtitle: 'Apple Original',
+    price: 39.0,
+    originalPrice: 49.0,
     image:
-      'https://lh3.googleusercontent.com/aida-public/AB6AXuAT_NMiywxp1n2uGTXB5jY7-s9P_CF5avLS543jLuqoHhiWx8aIlyQuirEZrbml32OJP3EvphZKjzR8m2MijiXv6NVV2vAOLJe5mGUyzzj5gSHh_7ZX1-yTRRefX0EQqt-TtQO-Hz5ZqK_PmBcNXaELoxWtnEVyKwI-xH1FZDr52QqyyWsMMGTFVl7HqYC84DfcXMU5VMURQwWjbG1qBYOgPbLNyqdG4rfIEBvDaWudmKq-5HVrV0ILRdOYrnwa9AqrHlhVwvrE0uI',
+      'https://images.unsplash.com/photo-1583394838336-acd977736f90?auto=format&fit=crop&w=1200&q=80',
     badge: { text: 'Oferta', color: 'black' },
-    category: 'gaming',
+    category: 'accessories',
   },
   {
     id: '7',
-    title: 'Vision VR',
-    subtitle: 'Standalone Headset',
-    price: 399.0,
+    title: 'MacBook Air 15"',
+    subtitle: 'Chip M3 - 8 GB - Midnight',
+    price: 1299.0,
     image:
-      'https://lh3.googleusercontent.com/aida-public/AB6AXuBbj--AxiU9kiV0nZJor2FmNNAOuZtEF3_GL8magbxUrE9bUSD4bjwicDlioLi11N_XkkiMVeaz7s4K9qknzvGsKOQWrkHJWIkS35wCiUH_qWiandLHRg5WQyCVEVDCuSpSMOKLzx4Di4aRmSHWvrzO9gEvciZT0RyWfyua8ReoXLpjZl_zG1OcWN8HIh2I2H5CJa0DrOa4aDIDRBv4qFuHh9_Bntei2xPdByDYEOJIl6Ltzrr7GStEz9tX9G3JIpsJzu31CMOUgDQ',
-    category: 'gaming',
+      'https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=1200&q=80',
+    category: 'mac',
   },
   {
     id: '8',
-    title: 'Laptop Air 15"',
-    subtitle: 'M2 Chip - Silver',
-    price: 1299.0,
+    title: 'MacBook Pro 14"',
+    subtitle: 'Chip M3 Pro - 18 GB - Space Black',
+    price: 1999.0,
     image:
-      'https://lh3.googleusercontent.com/aida-public/AB6AXuDzrCwotOlPYrrLB2NmMN2yvphm1bNMAi85MsGahFedVdpfFhme199ePce9Dmkg2-whlLpnPqfw8W6jDWHNZFlq1VKuE4KSPkhwhiZfYIyzmpZamJCP8wA5irxkzfbpGJw39B8ZTysx_8ku4SWaaTHfT-IKkq3CBwZsWzDhV1QLU7ARxhlUSuRSO3Iai3HwUyiwHi6lguKCPjHJcIdE9-wUDon0sp8JjuGt46OVu5e7TzTJV0KQ4Mpqe7DzF7FZomtNMZBWlgYSYxQ',
-    category: 'laptops',
+      'https://images.unsplash.com/photo-1611186871348-b1ce696e52c9?auto=format&fit=crop&w=1200&q=80',
+    category: 'mac',
   },
 ];

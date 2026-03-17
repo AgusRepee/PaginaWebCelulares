@@ -7,17 +7,18 @@ interface CategoryItem {
 }
 
 const categories: CategoryItem[] = [
-    { title: 'Relojes inteligentes', icon: 'watch', href: '#' },
-    { title: 'Gaming', icon: 'sports_esports', href: '#' },
-    { title: 'Auriculares', icon: 'headphones', href: '#' },
-    { title: 'Tablets', icon: 'tablet_mac', href: '#' },
+    { title: 'iPhone', icon: 'smartphone', href: '#' },
+    { title: 'iPad', icon: 'tablet_mac', href: '#' },
+    { title: 'Mac', icon: 'laptop_mac', href: '#' },
+    { title: 'Apple Watch', icon: 'watch', href: '#' },
+    { title: 'AirPods', icon: 'headphones', href: '#' },
 ];
 
 export const CategoryStrip: React.FC = () => {
     return (
         <section className="py-12 bg-background-light border-b border-gray-100">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6">
                     {categories.map((category) => (
                         <div 
                             key={category.title}

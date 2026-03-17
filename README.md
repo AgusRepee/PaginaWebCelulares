@@ -1,20 +1,37 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# MOBIX - Tienda Apple
 
-# Run and deploy your AI Studio app
+Tienda de productos Apple (solo Apple). Hecha con React, Vite y Tailwind.
 
-This contains everything you need to run your app locally.
+## Ver el sitio
 
-View your app in AI Studio: https://ai.studio/apps/temp/1
+**GitHub Pages:** https://agusrepee.github.io/PaginaWebCelulares/
 
-## Run Locally
+## Ejecutar en local
 
-**Prerequisites:**  Node.js
+**Requisitos:** Node.js
 
+1. Instalar dependencias:
+   ```bash
+   npm install
+   ```
+2. Arrancar el servidor de desarrollo:
+   ```bash
+   npm run dev
+   ```
+3. Abrir en el navegador la URL que indique Vite (por ejemplo `http://localhost:5173`).
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+## Build para producción
+
+```bash
+npm run build
+```
+
+La carpeta `dist` se genera con el sitio listo para desplegar.
+
+## Desplegar en GitHub Pages
+
+El repositorio está configurado para desplegar en **GitHub Pages** con GitHub Actions al hacer push a la rama `main`.
+
+- Repo: **PaginaWebCelulares**
+- Usuario: **AgusRepee**
+- URL del sitio: https://agusrepee.github.io/PaginaWebCelulares/

@@ -5,10 +5,10 @@ import { ProductCard } from '@/components/product/ProductCard';
 import { products } from '@/data/products';
 
 const accessoryCards = [
-  { title: 'Audio', icon: 'headphones', description: 'Auriculares, cascos y altavoces.' },
-  { title: 'Wearables', icon: 'watch', description: 'Relojes inteligentes y tecnología fitness.' },
-  { title: 'Gaming', icon: 'sports_esports', description: 'Mandos y equipamiento VR.' },
-  { title: 'Tablets', icon: 'tablet_mac', description: 'Trabajo, ocio y portabilidad.' },
+  { title: 'AirPods', icon: 'headphones', description: 'AirPods Pro, AirPods Max y más.' },
+  { title: 'Apple Watch', icon: 'watch', description: 'Correas, cargadores y accesorios.' },
+  { title: 'MagSafe', icon: 'battery_charging_full', description: 'Cargadores y soportes magnéticos.' },
+  { title: 'Fundas y protección', icon: 'phonelink', description: 'Fundas oficiales para iPhone e iPad.' },
 ];
 
 const accessoryPicks = products.filter((p) => ['2', '3', '5', '6', '7'].includes(p.id));
@@ -19,7 +19,7 @@ export const Accessories: React.FC = () => {
       <PageHeader
         eyebrow="Extras"
         title="Accesorios"
-        description="Mejora tu equipo con audio, wearables, gaming y más, seleccionados para combinar con tus dispositivos."
+        description="Accesorios Apple oficiales: AirPods, MagSafe, fundas y más para tu iPhone, iPad y Mac."
       />
 
       <section className="py-12 sm:py-16">
@@ -50,7 +50,7 @@ export const Accessories: React.FC = () => {
             <div className="flex items-end justify-between mb-8">
               <div>
                 <h2 className="text-2xl font-bold text-mobix-black">Accesorios populares</h2>
-                <p className="text-gray-500">Productos que suelen comprarse junto con el móvil.</p>
+                <p className="text-gray-500">Lo que más se lleva con iPhone y Mac.</p>
               </div>
             </div>
 

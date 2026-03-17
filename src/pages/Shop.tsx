@@ -4,16 +4,16 @@ import { ProductCard } from '@/components/product/ProductCard';
 import { products } from '@/data/products';
 import type { Product } from '@/types';
 
-type FilterKey = 'all' | 'phones' | 'audio' | 'wearables' | 'tablets' | 'laptops' | 'gaming';
+type FilterKey = 'all' | 'iphone' | 'ipad' | 'mac' | 'watch' | 'airpods' | 'accessories';
 
 const filters: Array<{ key: FilterKey; label: string }> = [
   { key: 'all', label: 'Todos' },
-  { key: 'phones', label: 'Móviles' },
-  { key: 'audio', label: 'Audio' },
-  { key: 'wearables', label: 'Wearables' },
-  { key: 'tablets', label: 'Tablets' },
-  { key: 'laptops', label: 'Portátiles' },
-  { key: 'gaming', label: 'Gaming' },
+  { key: 'iphone', label: 'iPhone' },
+  { key: 'ipad', label: 'iPad' },
+  { key: 'mac', label: 'Mac' },
+  { key: 'watch', label: 'Apple Watch' },
+  { key: 'airpods', label: 'AirPods' },
+  { key: 'accessories', label: 'Accesorios' },
 ];
 
 function filterProducts(list: Product[], active: FilterKey, query: string) {
@@ -38,7 +38,7 @@ export const Shop: React.FC = () => {
       <PageHeader
         eyebrow="Tienda online"
         title="Tienda"
-        description="Navega por nuestros últimos dispositivos y accesorios. Usa los filtros para encontrar lo que buscas."
+        description="Todo Apple en un solo lugar. iPhone, iPad, Mac, Apple Watch y AirPods. Usa los filtros para encontrar lo que buscas."
         actions={
           <div className="w-full sm:w-auto">
             <div className="relative">

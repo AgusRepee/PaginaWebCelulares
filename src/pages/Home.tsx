@@ -18,7 +18,7 @@ export const Home: React.FC = () => {
                     <div className="flex justify-between items-end mb-10">
                         <div>
                             <h2 className="text-3xl font-bold text-mobix-black mb-2">Última colección</h2>
-                            <p className="text-gray-500">La tecnología más reciente disponible ahora.</p>
+                            <p className="text-gray-500">Lo último de Apple disponible ahora.</p>
                         </div>
                         <Link to="/shop" className="hidden sm:inline-flex items-center text-sm font-semibold text-primary hover:text-mobix-black transition-colors">
                             Ver todos los productos <span className="material-icons text-sm ml-1">arrow_forward</span>

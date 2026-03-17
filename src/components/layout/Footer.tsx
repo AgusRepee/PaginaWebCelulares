@@ -11,7 +11,7 @@ export const Footer: React.FC = () => {
                             MOBIX
                         </a>
                         <p className="text-gray-500 mb-6 text-sm">
-                            Tecnología premium para el estilo de vida actual. Calidad, diseño e innovación en cada dispositivo.
+                            Solo productos Apple. Calidad, diseño e innovación en cada dispositivo.
                         </p>
                     </div>
 
@@ -19,11 +19,11 @@ export const Footer: React.FC = () => {
                     <div>
                         <h4 className="font-semibold text-gray-900 mb-4">Tienda</h4>
                         <ul className="space-y-3 text-sm text-gray-500">
-                            <li><a href="#" className="hover:text-primary transition-colors">Smartphones</a></li>
-                            <li><a href="#" className="hover:text-primary transition-colors">Tablets</a></li>
-                            <li><a href="#" className="hover:text-primary transition-colors">Wearables</a></li>
+                            <li><a href="#" className="hover:text-primary transition-colors">iPhone</a></li>
+                            <li><a href="#" className="hover:text-primary transition-colors">iPad</a></li>
+                            <li><a href="#" className="hover:text-primary transition-colors">Mac</a></li>
+                            <li><a href="#" className="hover:text-primary transition-colors">Apple Watch</a></li>
                             <li><a href="#" className="hover:text-primary transition-colors">Accesorios</a></li>
-                            <li><a href="#" className="hover:text-primary transition-colors">Novedades</a></li>
                         </ul>
                     </div>
 
